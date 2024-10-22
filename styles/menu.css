@@ -28,6 +28,13 @@
     overflow: hidden;
 }
 
+.arquet img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
 .archetypes-heart {
     position: absolute;
     background-color: var(--color-primary-6);
@@ -49,7 +56,7 @@
 }
 
 @media screen and (max-width: 1170px) {
-    #dishes {
+    #archetypes {
         flex-wrap: wrap;
         justify-content: center;
     }
