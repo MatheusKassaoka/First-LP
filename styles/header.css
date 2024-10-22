@@ -17,6 +17,16 @@ header {
 #nav_logo {
     font-size: 24px;
     color: var(--color-primary-6);
+    max-width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+#logo-text {
+    font-size: 24px; 
+    color: var(--color-primary-6);
+    font-weight: bold;
+    vertical-align: 40px;
 }
 
 #nav_list {
@@ -24,8 +34,6 @@ header {
     list-style: none;
     gap: 48px;
 }
-
-
 
 .nav-item a {
     text-decoration: none;
@@ -76,5 +84,5 @@ header {
     #mobile_nav_list .nav-item {
         list-style: none;
         text-align: center;
-    } 
+    }
 }

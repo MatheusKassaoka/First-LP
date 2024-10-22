@@ -8,12 +8,12 @@
 :root {
     --color-primary-1: #f3f3f3;
     --color-primary-2: #ffe8b4;
-    --color-primary-3: #6be2b5;
-    --color-primary-4: #7de0e4;
-    --color-primary-5: #7deb8c;
+    --color-primary-3: #fded09;
+    --color-primary-4: #f1a707;
+    --color-primary-5: #11ff31;
     --color-primary-6: #fcc30b;
 
-    --color-neutral-0: #fff;
+    --color-neutral-0: #ffffff;
     --color-neutral-1: #1d1d1d;
 }
 
@@ -52,22 +52,6 @@ section {
     border: none !important;
 }
 
-a.btn-default {
-    border: none !important;
-    outline: none !important;
-    box-shadow: none !important;
-    background-color: var(--color-primary-5);
-    display: inline-block;
-    text-align: center;
-    border-radius: 12px;
-    padding: 10px 14px;
-    font-weight: 600;
-    color: var(--color-neutral-1);
-    text-decoration: none;
-    transition: background-color .3s ease;
-}
-
-
 .btn-default:hover {
     background-color: var(--color-primary-3);
 }
@@ -93,7 +77,7 @@ a.btn-default {
 }
 
 .social-media-buttons a:hover {
-    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 12px 8px rgba(250, 214, 10, 0.986);
 }
 
 .section-title {

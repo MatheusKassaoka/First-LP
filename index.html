@@ -6,12 +6,17 @@
     <title>Um jeito novo de ver a vida</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="./styles/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <header>
     <nav id="navbar">
-        <i class="fa-solid fa-sun" id="nav_logo"> Iluminando</i>
-    
+        <div id="logo-conteiner">
+        <img src="./images/logo.png" id="nav_logo" alt="Logo da Empresa">
+        <span id="logo-text"> Iluminando</span>
+        </div>
         <ul id="nav_list">
             <li class="nav-item active">
                 <a href="#home">Início</a>
@@ -20,13 +25,16 @@
                 <a href="#menu">Yung</a>
             </li>
             <li class="nav-item">
-                <a href="#testimoniais">Avaliações</a>
+                <a href="#testimonials">Avaliações</a>
             </li>
         </ul>
 
-        <button class="btn-default" >
-            Ilumine-se aqui
-        </button>
+        <div id="cta_buttons">
+            <a href="#home" class="btn-default">
+                Ilumine-se aqui
+            </a>
+
+        </div>
 
         <button id="mobile_btn">
             <i class="fa-solid fa-bars"></i>
@@ -36,13 +44,13 @@
     <div id="mobile_menu">
         <ul id="mobile_nav_list">
             <li class="nav-item">
-                <a href="home">Início</a>
+                <a href="#home">Início</a>
             </li>
             <li class="nav-item">
-                <a href="menu">Yung</a>
+                <a href="#menu">Yung</a>
             </li>
             <li class="nav-item">
-                <a href="testimoniais">Avaliações</a>
+                <a href="#testimonials">Avaliações</a>
             </li>
         </ul>
              
@@ -81,10 +89,11 @@
                         </a>
                     </div>
                 </div>
-    
-                <div id="banner">
-                    <img src="./images/Sol.png" alt="Um homem olhando para o por do sol em cima de uma montanha">
+                
+                <div class="sun-border">
+                        <img src="./images/Sol.png" alt="Um homem olhando para o por do sol em cima de uma montanha">
                 </div>
+                
             </section>
     
             <section id="menu">
@@ -172,8 +181,7 @@
                         </h3>
     
                         <span class="archetypes-description">
-                            O aspecto masculino inconsciente de uma mulher.
-                        </span>
+                            A figura maternal universal, presente no inconsciente coletivo da humanidade.
 
                     </div>
 
@@ -189,7 +197,7 @@
                         </h3>
     
                         <span class="archetypes-description">
-                            O aspecto masculino inconsciente de uma mulher.
+                            Símbolo da experiência e da compreensão profunda das complexidades da vida.
                         </span>
 
                     </div>
@@ -204,7 +212,7 @@
                             Herói
                         </h3>
                         <span class="archetypes-description">
-                            O aspecto masculino inconsciente de uma mulher.
+                            Simboliza a luta e a superação, mostra que os grandes desafios são oportunidades para o crescimento.
                         </span>
                     </div>
                     <div class="arquet">
@@ -219,7 +227,7 @@
                         </h3>
     
                         <span class="archetypes-description">
-                            O aspecto masculino inconsciente de uma mulher.
+                            Representa a totalidade e a integração do consciente e do inconsciente.
                         </span>
 
                     </div>
@@ -312,6 +320,6 @@
                 </div>
             </div>
         </footer>
-       
+        <script src="./java/script.js"></script>
     </body>
     </html>
