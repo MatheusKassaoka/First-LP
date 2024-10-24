@@ -1,10 +1,11 @@
 header {
     width: 100%;
-    padding: 28px 8%;
+    padding: 28px 8px;
     position: sticky;
     top: 0;
     background-color: var(--color-primary-1);
     z-index: 3;
+    box-sizing:border-box;
 }
 
 #navbar {
@@ -15,11 +16,9 @@ header {
 }
 
 #nav_logo {
-    font-size: 24px;
-    color: var(--color-primary-6);
     max-width: 100px;
     height: auto;
-    margin-right: 10px;
+    margin-right: 1px;
 }
 
 #logo-text {
@@ -55,9 +54,22 @@ header {
 }
 
 @media screen and (max-width: 1170px) {
-    #nav_list,
-    #navbar .btn-default {
+    
+    #nav_list {
         display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    #navbar .btn-default {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    #mobile_menu {
+        width: 100%;
     }
 
     #mobile_btn {

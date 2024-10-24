@@ -17,10 +17,6 @@
     color: var(--color-primary-4);
 }
 
-#cta .title span {
-    color: var(--color-primary-6);
-}
-
 #cta .description {
     font-size: 1.2rem;
 }
@@ -33,43 +29,6 @@
 #cta_buttons a {
     text-decoration: none;
     color: var(--color-neutral-1);
-}
-
-#banner {
-    display: flex;
-    align-items: start;
-    justify-content: end;
-    width: 70%;
-    z-index: 2;
-}
-
-#banner img {
-    height: auto;
-    width: 100%;
-}
-
-.sun-border {
-    display: inline-block;
-    position: relative;
-}
-
-.sun-border img {
-    display: block;
-    border-radius: 50%; 
-    box-shadow: 0 0 30px 15px rgba(255, 215, 0, 0.8); 
-}
-
-.sun-border::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 150%;
-    height: 150%;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(255, 215, 0, 0.8), rgba(255, 255, 0, 0));
-    transform: translate(-50%, -50%);
-    z-index: -1;
 }
 
 @media screen and (max-width: 1170px) {

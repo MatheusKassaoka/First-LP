@@ -35,7 +35,7 @@
     margin: 0 auto;
 }
 
-.archetypes-heart {
+.archetypes-icon {
     position: absolute;
     background-color: var(--color-primary-6);
     display: flex;
