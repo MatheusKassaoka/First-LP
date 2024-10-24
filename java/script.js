@@ -59,3 +59,18 @@ $(document).ready(function() {
         distance: '20%'
     })
 });
+
+// swiper
+
+var swiper = new Swiper('.swiper-container', {
+    loop: true,
+    cssMode: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
