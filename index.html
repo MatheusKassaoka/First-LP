@@ -58,42 +58,43 @@
         </header> 
     </div>
     <main id="content">
-            <section id="home">
+        <section id="home">
+            <div class="sun-border">
+                <img src="./images/Sol.png" alt="Um homem olhando para o por do sol em cima de uma montanha">
+            </div>
                 
-                <div id="cta">
-                    <h1 class="title">
-                        A paz se encontra dentro de você
-                    </h1>
-    
-                    <p class="description">
-                        A Reflexões da Vida é um espaço dedicado a promover o autoconhecimento, equilíbrio espiritual e consciência ecológica. Acreditamos que a conexão entre corpo, mente e ambiente é essencial para uma vida plena.
-                    </p>
-    
-                    <div id="cta_buttons">
-                        <a href="#menu" class="btn-default">
-                            Comece aqui
-                        </a>
-    
-                    </div>
-    
-                    <div class="social-media-buttons">
-                        <a href="">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-    
-                        <a href="">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-    
-                        <a href="">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                    </div>
+            <div id="cta">
+                <h1 class="title">
+                    A paz se encontra dentro de você
+                </h1>
+
+                <p class="description">
+                    A Reflexões da Vida é um espaço dedicado a promover o autoconhecimento, equilíbrio espiritual e consciência ecológica. Acreditamos que a conexão entre corpo, mente e ambiente é essencial para uma vida plena.
+                </p>
+
+                <div id="cta_buttons">
+                    <a href="#menu" class="btn-default">
+                        Comece aqui
+                    </a>
+
                 </div>
-                
-            </section>
 
+                <div class="social-media-buttons">
+                    <a href="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
 
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            
+        </section>
             <section id="main-banner">
 
                 <div class="swiper-container">
@@ -305,30 +306,30 @@
                 </div>
             </section>
         </main>
-            <section id="contact" class="py-5 bg-light">
-            <div class="container">
-                <h2 class="text-center" data-aos="fade-up">Entre em Contato</h2>
-                <form id="contact-form" class="w-50 mx-auto" data-aos="fade-up">
-                    <div class="form-group mb-3">
-                        <label for="name">Nome:</label>
-                        <input type="text" id="name" class="form-control" required>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" class="form-control" required>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="telefone">Telefone:</label>
-                        <input type="telefone" id="telefone" class="form-control" required>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="message">Mensagem:</label>
-                        <textarea id="message" rows="5" class="form-control" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary w-100">Enviar Mensagem</button>
-                </form>
+        <section id="contato">
+            <div class="form-container">
+            <h2>Contato</h2>
+            <form id="contactForm">
+              <label for="name">Nome:</label>
+              <input type="text" id="name" name="name" required>
+          
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+          
+              <label for="phone">Telefone:</label>
+              <input type="tel" id="phone" name="phone" required>
+          
+              <label for="message">Mensagem:</label>
+              <textarea id="message" name="message" required></textarea>
+          
+              <button class="btn-default" type="submit">Enviar</button>
+            </form>
             </div>
-            </section>
+            <div id="formStatus"></div>
+            <div class="image-form">
+                <img src="./images/solform.jpg" alt="Pessoa tocando o sol"/>
+            </div>
+          </section>
         <footer>
             <div id="footer_items">
                 <span id="copyright">
