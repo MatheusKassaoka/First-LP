@@ -60,7 +60,7 @@ $(document).ready(function() {
     })
 });
 
-// swiper
+// Swiper
 
 var swiper = new Swiper('.swiper-container', {
     loop: true,
@@ -74,3 +74,34 @@ var swiper = new Swiper('.swiper-container', {
         prevEl: '.swiper-button-prev',
     },
 });
+
+// EmailJs
+
+document.getElementById('contactForm').addEventListener('submit', function (event) {
+    event.preventDefault(); 
+  
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const message = document.getElementById('message').value;
+  
+    if (!name || !email || !phone || !message) {
+      document.getElementById('formStatus').innerText = 'Olá, por favor, preencha todos os campos, por gentileza.';
+      return;
+    }
+  
+    // Envio do formulário usando EmailJS
+    emailjs.send('service_912m89s', 'template_52c0l1g', {
+      name: name,
+      email: email,
+      phone: phone,
+      message: message
+    })
+    .then(function(response) {
+      document.getElementById('formStatus').innerText = 'Eba! A mensagem foi  enviada com sucesso!';
+      document.getElementById('contactForm').reset(); 
+    }, function(error) {
+      document.getElementById('formStatus').innerText = 'Ops! Falha ao enviar a mensagem. Tente novamente, por favor.';
+    });
+  });
+  
