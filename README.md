@@ -1,4 +1,4 @@
-# Projeto de Web
+# Landing Page
 
 Este é um projeto de web que utiliza as bibliotecas Swiper.js, EmailJS, jQuery, ScrollReveal e font-awesome para criar uma aplicação dinâmica e interativa.
 
