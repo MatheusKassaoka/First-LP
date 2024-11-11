@@ -53,6 +53,7 @@ Lembre-se de que tudo o que o usuário enviar por meio do formulário será nome
 Então vamos para a instalação. Vamos para a parte de documentação do site do EmailJS: https://www.emailjs.com/docs/sdk/installation/, ou em SDK installation, e copie o trecho de código dentro da documentação e altere o ID do serviço, o ID do modelo e sua chave pública. Você encontrará a chave pública nas configurações da sua conta.
 
 Agora copie o código dentro do head:
+
 <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
@@ -64,7 +65,9 @@ Agora copie o código dentro do head:
    })();
 </script>
 
-Use o SDK do EmailJS no JavaScript para enviar o e-mail com os dados do formulário. O idela seria criar um arquivo JS e colocar o seguinte código: document.getElementById("contactForm").addEventListener("submit", function(event) {
+Use o SDK do EmailJS no JavaScript para enviar o e-mail com os dados do formulário. O idela seria criar um arquivo JS e colocar o seguinte código: 
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault(); 
 
     const serviceID = "SEU_SERVICE_ID";
@@ -79,4 +82,5 @@ Use o SDK do EmailJS no JavaScript para enviar o e-mail com os dados do formulá
             console.log("Erro:", error);
         });
 });
+
 Use os mesmos atributos de nome para suas tags de entrada que os identificadores em seu modelo. Assim você receberá os emails no seu email. 
