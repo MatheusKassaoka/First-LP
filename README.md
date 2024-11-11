@@ -24,28 +24,28 @@ cd seu-repositorio
 
 Em seguida digite npm install e depois npm start, para então abrir no seu navegador pelo link indicado
 
-<!-- Instalação dos ícones
+Instalação dos ícones
 
-<!-- Para os ícones utilizados aparecerem, é preciso acessar o site cdnjs e pesquisar por font-awesome e copiar o primeiro link (https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css), colocando ele dentro do <head> -->
+Para os ícones utilizados aparecerem, é preciso acessar o site cdnjs e pesquisar por font-awesome e copiar o primeiro link (https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css), colocando ele dentro do <head>
 
-<!-- Instação do Jquery>
+Instação do Jquery
 
-<!-- // Acessar o site https://cdnjs.com/libraries/jquery, ou ir no site do cdnjs e pesquisar por Jquery, acessar as libraries, e copiar o primeiro link, (https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js) e colar esse link dentro do nosso código html e da <head> -->
- <!-- Lembre de importar o javascript no final do codigo do html antes de fechar o body -->
+Acessar o site https://cdnjs.com/libraries/jquery, ou ir no site do cdnjs e pesquisar por Jquery, acessar as libraries, e copiar o primeiro link, (https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js) e colar esse link dentro do nosso código html e da <head> 
+ Lembre de importar o javascript no final do codigo do html antes de fechar o body 
 
-<!-- Instalação do Scrollreveal 
+Instalação do Scrollreveal 
 
- Acessar o site: https://scrollrevealjs.org/guide/hello-world.html, ou ir no site do scrollreveal e ir em guide, e copiar o primeiro link, o link: <script src="https://unpkg.com/scrollreveal"></script> no código do html, também dentro da <head>  Então você pode costumizar o item que você quer que tenha a animação usando esse código: ScrollReveal().reveal('.headline');, sendo dentro do headline o item que você quer, podendo determinar o quanto ele vem, a duração, o tempo, o tipo, etc. -->
+ Acessar o site: https://scrollrevealjs.org/guide/hello-world.html, ou ir no site do scrollreveal e ir em guide, e copiar o primeiro link, o link: <script src="https://unpkg.com/scrollreveal"></script> no código do html, também dentro da <head>  Então você pode costumizar o item que você quer que tenha a animação usando esse código: ScrollReveal().reveal('.headline');, sendo dentro do headline o item que você quer, podendo determinar o quanto ele vem, a duração, o tempo, o tipo, etc.
 
- <!-- Instalação do Swiper
+ Instalação do Swiper
 
  Entre no site https://swiperjs.com/get-started e vá até a parte do CDN
  copiando então o link : 
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-dentro do seu <head>  e aqui tem o link de como utilizar, como estilizar da melhor forma para você https://swiperjs.com/swiper-api  -->
+dentro do seu <head>  e aqui tem o link de como utilizar, como estilizar da melhor forma para você https://swiperjs.com/swiper-api 
 
-<!-- Instalação do EmailJs
+Instalação do EmailJs
 
 Primeiro entre no site: https://dashboard.emailjs.com/admin e faça o cadastro no EmailJs, assim clique em Email Services e clique em "Add New Service" para então linkar o seu email e ter o seu ServiceID, em seguida vá em "Email Templates" e clique em "Create New Template", personalizando então o assunto do seu email, qual conteúdo ele conterá, para onde deve ser enviado, e ter o seu Template ID. 
 Lembre-se de que tudo o que o usuário enviar por meio do formulário será nomeado como um identificador separado entre chaves duplas {{identifier}}.
@@ -67,10 +67,8 @@ Agora copie o código dentro do head:
 Use o SDK do EmailJS no JavaScript para enviar o e-mail com os dados do formulário. O idela seria criar um arquivo JS e colocar o seguinte código: document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault(); 
 
-
     const serviceID = "SEU_SERVICE_ID";
     const templateID = "SEU_TEMPLATE_ID";
-
 
     emailjs.sendForm(serviceID, templateID, this)
         .then(() => {
