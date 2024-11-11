@@ -151,16 +151,15 @@ section {
   }
   
   .image-form {
-    flex: 1; 
     display: flex;
     justify-content: center; 
     align-items: center;
-    margin-left: 500px; 
+
   }
 
   .image-form img {
-    width: 100%;
-    height: auto;
+    width: 70%;
+    margin-left: 200px;
   }
   
   h2 {
@@ -172,6 +171,7 @@ section {
     margin: 10px 0 5px;
     color: #333;
     display:flex;
+
   }
   
   input {
@@ -179,11 +179,12 @@ section {
     margin-bottom: 10px;
     border: 1px solid #ff9500; 
     border-radius: 50px; 
-    display: flex
+    display: flex;
+    width: 400px;
   }
 
   textarea {
-    padding: 50px;
+    padding: 70px;
     margin-bottom: 10px;
     border: 1px solid #ff9500; 
     border-radius: 50px; 
@@ -196,8 +197,14 @@ section {
   
   #formStatus {
     margin-top: 15px;
-    color: #d9534f; 
+    color: #00ff62; 
   }
+
+  .error-message {
+    color: red;
+    font-size: 0.9rem;
+    display: none;
+}
   
   @media (max-width: 768px) {
     body {

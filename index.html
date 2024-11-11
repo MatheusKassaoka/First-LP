@@ -10,6 +10,16 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "ADfhyZgZMUa-4Ub6s",
+        });
+        })();
+    </script>
 </head>
 <body>
     <header>
@@ -311,16 +321,20 @@
             <h2>Contato</h2>
             <form id="contactForm">
               <label for="name">Nome:</label>
-              <input type="text" id="name" name="name" required>
+              <input type="text" id="name" name="name"placeholder="Coloque aqui o seu nome, por favor." required>
+              <span class="error-message" id="nameError">Eita! Por favor, insira aqui o seu nome.</span>
           
               <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required>
+              <input type="email" id="email" name="email" placeholder="Aqui vem o seu e-mail!" required>
+              <span class="error-message" id="emailError">Eita! Tem que inserir um e-mail válido, por gentileza.</span>
           
               <label for="phone">Telefone:</label>
-              <input type="tel" id="phone" name="phone" required>
+              <input type="tel" id="phone" name="phone" placeholder="Digite apenas números, por gentileza." required>
+              <span class="error-message" id="phoneError">Ei! Está faltando o seu telefone numérico aqui!.</span>
           
               <label for="message">Mensagem:</label>
               <textarea id="message" name="message" required></textarea>
+              <span class="error-message" id="messageError">Não quer nos dizer nada? Por favor, coloque aqui a sua mensagem.</span>
           
               <button class="btn-default" type="submit">Enviar</button>
             </form>

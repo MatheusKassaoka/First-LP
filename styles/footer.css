@@ -1,10 +1,8 @@
 footer {
     width: 100%;
     padding: 20px 8px;
-    position: relative;
-    bottom: 0;
-    left: 0;
     background-color: var(--color-primary-2);
+    margin-bottom:0%;
 }
 
 #footer_items {

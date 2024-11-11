@@ -79,29 +79,65 @@ var swiper = new Swiper('.swiper-container', {
 
 document.getElementById('contactForm').addEventListener('submit', function (event) {
     event.preventDefault(); 
-  
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const phone = document.getElementById('phone').value;
-    const message = document.getElementById('message').value;
-  
-    if (!name || !email || !phone || !message) {
-      document.getElementById('formStatus').innerText = 'Olá, por favor, preencha todos os campos, por gentileza.';
-      return;
-    }
-  
-    // Envio do formulário usando EmailJS
-    emailjs.send('service_912m89s', 'template_52c0l1g', {
-      name: name,
-      email: email,
-      phone: phone,
-      message: message
-    })
-    .then(function(response) {
-      document.getElementById('formStatus').innerText = 'Eba! A mensagem foi  enviada com sucesso!';
-      document.getElementById('contactForm').reset(); 
-    }, function(error) {
-      document.getElementById('formStatus').innerText = 'Ops! Falha ao enviar a mensagem. Tente novamente, por favor.';
-    });
-  });
+    
+        let isValid = true;
+    
+        const nameField = document.getElementById("name");
+        const emailField = document.getElementById("email");
+        const emailError = document.getElementById('emailError');
+        const phoneField = document.getElementById("phone");
+        const messageField = document.getElementById("message");
+    
+        if (nameField.value.trim() === "") {
+            document.getElementById("nameError").style.display = "block";
+            isValid = false;
+        } else {
+            document.getElementById("nameError").style.display = "none";
+        }
+
+        const emailPattern = /@/;
+        if (!emailPattern.test(emailField.value)) {
+            document.getElementById("emailError").style.display = "block";
+            emailError.textContent = 'O campo de e-mail deve conter "@"!';
+            isValid = false;
+        } else {
+            document.getElementById("emailError").style.display = "none";
+        }
+
+        const phonePattern = /^[0-9]+$/;
+
+        if (!phonePattern.test(phoneField.value)) {
+            event.preventDefault();
+            phoneError.style.display = 'block';
+            phoneError.textContent = "O campo deve conter apenas números!";
+            isValid=false;
+        } else {
+            phoneError.style.display = 'none';
+        }
+    
+        if (messageField.value.trim() === "") {
+            document.getElementById("messageError").style.display = "block";
+            isValid = false;
+        } else {
+            document.getElementById("messageError").style.display = "none";
+        }
+
+        if(isValid) {
+
+            const serviceID = "service_912m89s";
+            const templateID = "template_52c0l1g";
+    
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+                document.getElementById('formStatus').innerText = 'Eba! A mensagem foi enviada com sucesso!';
+                document.getElementById('contactForm').reset(); // Limpa o formulário
+            }, (error) => {
+                document.getElementById('formStatus').innerText = 'Ops! Falha ao enviar a mensagem. Tente novamente, por favor.';
+                console.log("Erro:", error);
+            });
+
+        } else {
+            document.getElementById('formStatus').innerText = 'Por favor, corrija os erros antes de enviar.';
+        }
+});
   
