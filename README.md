@@ -2,7 +2,7 @@
 
 Este é um projeto de web que utiliza as bibliotecas Swiper.js, EmailJS, jQuery, ScrollReveal e font-awesome para criar uma aplicação dinâmica e interativa.
 
-## Descrição O projeto inclui: 
+## O projeto inclui: 
 - **Swiper.js**: Para implementar sliders responsivos e personalizados. 
 - **EmailJS**: Para enviar emails diretamente do seu site sem a necessidade de um backend, ou seja, permite a comunicação com um serviço de email sem a necessidade de um backend próprio.
 - **jQuery**: Para manipulação do DOM e facilitação de interações com a página. 
